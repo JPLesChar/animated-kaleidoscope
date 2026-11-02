@@ -1,0 +1,62 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", sans-serif;
+  background: #090713;
+  color: #f5efff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  background:
+    radial-gradient(ellipse at center, #171025 0%, #090713 66%),
+    #090713;
+}
+
+canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  position: absolute;
+  top: clamp(1.5rem, 5vw, 3.5rem);
+  left: clamp(1.5rem, 6vw, 5rem);
+  pointer-events: none;
+  text-shadow: 0 2px 18px #090713;
+}
+
+.eyebrow {
+  margin: 0 0 0.6rem;
+  color: #d3a9ff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 3.25rem);
+  letter-spacing: -0.045em;
+}
+
+.intro p:last-child {
+  margin: 0.75rem 0 0;
+  color: #b7adc9;
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+}
